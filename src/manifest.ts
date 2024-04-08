@@ -19,11 +19,12 @@ const manifest = defineManifest(async (env) => ({
       js: ['content/index.tsx'],
     },
   ],
+  action: {},
   host_permissions: ['<all_urls>'],
-  options_ui: {
-    page: 'options/options.html',
-    open_in_tab: true,
-  },
+  // options_ui: {
+  //   page: 'options/options.html',
+  //   open_in_tab: true,
+  // },
   web_accessible_resources: [
     {
       resources: [
@@ -33,15 +34,15 @@ const manifest = defineManifest(async (env) => ({
       matches: ['<all_urls>'],
     },
   ],
-  action: {
-    default_popup: 'popup/popup.html',
-    default_icon: {
-      '16': 'images/extension_16.png',
-      '32': 'images/extension_32.png',
-      '48': 'images/extension_48.png',
-      '128': 'images/extension_128.png',
-    },
-  },
+  // action: {
+  //   default_popup: 'popup/index.html',
+  //   default_icon: {
+  //     '16': 'images/extension_16.png',
+  //     '32': 'images/extension_32.png',
+  //     '48': 'images/extension_48.png',
+  //     '128': 'images/extension_128.png',
+  //   },
+  // },
   icons: {
     '16': 'images/extension_16.png',
     '32': 'images/extension_32.png',

@@ -17,3 +17,9 @@ browser.runtime.onInstalled.addListener(async (details) => {
     await browser.tabs.create({ url });
   }
 });
+
+browser.action.onClicked.addListener(async (tab) => {
+  // open the popup
+  const url = browser.runtime.getURL('welcome/welcome.html');
+  await browser.tabs.create({ url });
+});
